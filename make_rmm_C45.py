@@ -12,15 +12,15 @@ MODE:
   20  -> original RMM-C20 (20 features)
   45  -> [mass,y,Et] for same-type; [mass,y] for cross-type + MET↔TYPE (45 features)
   60  -> extended [mass, y, Et] per block (60 features)
-  
-# full 60-D
-python make_rmm_C60.py --csv your_rmm.csv.gz --mode 60
 
 # compressed 45-D (no useless zero ETs for cross-types & MET↔TYPE)
-python make_rmm_C60.py --csv your_rmm.csv.gz --mode 45
+python make_rmm_C45.py --csv your_rmm.csv.gz             (default mode)
+
+# full 60-D
+python make_rmm_C45.py --csv your_rmm.csv.gz --mode 60
 
 # original 20-D
-python make_rmm_C60.py --csv your_rmm.csv.gz --mode 20
+python make_rmm_C45.py --csv your_rmm.csv.gz --mode 20
 
 """
 
