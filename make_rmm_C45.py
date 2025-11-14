@@ -340,7 +340,7 @@ def main():
                     help="Comma-separated metadata columns to ignore when scanning (optional)")
     ap.add_argument("--out", default=None,
                     help="Output CSV path (default: compact{MODE}_all.csv or compact{MODE}_event{N}.csv)")
-    ap.add_argument("--mode", choices=["20", "45", "60"], default="60",
+    ap.add_argument("--mode", choices=["20", "60"], default="45",
                     help="Compact mode: '20' for RMM-C20, '45' for reduced [mass,y] cross-type, '60' for full [mass,y,Et]")
     args = ap.parse_args()
 
