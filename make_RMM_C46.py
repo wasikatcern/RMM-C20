@@ -260,7 +260,7 @@ def main():
     parser.add_argument(
         "--style",
         choices=["add", "frob"],
-        default="add",
+        default="frob",
         help="Aggregation style: 'add' for sums, 'frob' for Frobenius/L2 norms",
     )
     parser.add_argument(
